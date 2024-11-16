@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- <link rel="stylesheet" href="all.css"> -->
+        <link rel="stylesheet" href="style.css">
+        <!-- <link rel="stylesheet" href="css/normalize.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;800&display=swap" rel="stylesheet"> -->
+    </head>
+    <body>
+        <nav>
+            <h1 onclick="page()" style="cursor: pointer;">shopping cart</h1>
+            <!-- ..sign div start.. -->
+            <div>
+                <a href="../signin page/index.html">log in</a>
+            </div>
+        </nav>
+        <!-- .....end of nav  -->
+        <!-- --------------------------------------------------------- -->
+        <!-- start of form -->
+        <div class="container">
+            <form action="">
+                <h2>register now</h2>
+                <input id="email"  onkeyup="color(this.id)" type="email" placeholder="enter email address">
+                <input id="password"  onkeyup="color(this.id)"  type="password" placeholder="enter password">
+                <input id="confirmation" onkeyup="color(this.id)" onkeyup="back()" type="password" placeholder="confirm password">
+                <button id="button" onclick="create() ;return false"><a href="" id="loginpage">sign up</a></button>
+                <div>
+                    <p>have account</p>
+                    <a href="../signin page/index.html" style="color: blue;">log in</a>
+                </div>
+            </form>    
+        </div>
+        
+        <!-- end of container  -->
+        <!-- --------------------------------------------------------- -->
+        <!-- ...javascript.... -->
+        <script src="main.js"></script>
+        <!-- .......javascript end -->
+
+    </body>
+</html>

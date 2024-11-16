@@ -1,0 +1,83 @@
+
+/* الهواتف المحمولة */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .divinput input {
+        width: 90%;
+    }
+
+    .innerdiv {
+        padding: 1rem;
+    }
+}
+
+/* الأجهزة اللوحية */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        padding: 1rem 5%;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .divinput input {
+        width: 70%;
+    }
+}
+
+/* الشاشات الكبيرة */
+@media (min-width: 1025px) {
+    nav {
+        padding: 1.5rem 10%;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .innerdiv {
+        padding: 1.5rem;
+    }
+}
+/* الشاشات أصغر من 400px */
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* منتج واحد في كل صف */
+        gap: 1rem; /* مسافة بين المنتجات */
+    }
+
+    .innerdiv {
+        padding: 0.5rem;
+        text-align: center; /* محاذاة المحتوى إلى المنتصف */
+    }
+
+    img {
+        width: 100%; /* عرض الصورة بالكامل */
+        height: auto; /* الحفاظ على أبعاد الصورة */
+    }
+
+    .divinput input {
+        width: 95%; /* عرض الإدخال ليملأ الشاشة */
+    }
+
+    .adddiv {
+        flex-direction: column; /* ترتيب الأزرار عمودياً */
+        gap: 10px;
+    }
+}

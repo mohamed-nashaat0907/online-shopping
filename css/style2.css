@@ -1,0 +1,183 @@
+/* تنسيقات عالمية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem 5%;
+    color: white;
+}
+
+div div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.divshopping {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+ul#ul li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.innerdiv {
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.divinput {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.divinput input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Media Queries */
+
+/* الشاشات أقل من 400px */
+@media (max-width: 400px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 1rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr; /* عرض منتج واحد في كل صف */
+        gap: 1rem;
+    }
+
+    .divinput input {
+        width: 90%;
+    }
+
+    .innerdiv {
+        padding: 0.5rem;
+    }
+
+    ul {
+        width: 100%;
+        left: 0;
+        top: 100%;
+    }
+}
+
+/* الشاشات من 401px إلى 768px */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem 5%;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .divinput input {
+        width: 80%;
+    }
+
+    .innerdiv {
+        padding: 1rem;
+    }
+}
+
+/* الشاشات من 769px إلى 1024px */
+@media (max-width: 1024px) {
+    nav {
+        padding: 1rem 10%;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .divinput input {
+        width: 70%;
+    }
+
+    .innerdiv {
+        padding: 1.5rem;
+    }
+}
+
+/* الشاشات الأكبر من 1024px */
+@media (min-width: 1025px) {
+    nav {
+        padding: 1.5rem 10%;
+    }
+
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .divinput input {
+        width: 60%;
+    }
+
+    .innerdiv {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,289 @@
+/*
+================================
+CSS Reset
+================================
+
+*/
+/* Global Styles */
+:root{
+    --main-color:rgb(32, 126, 226) ;
+    --secondary-color: #dfa40e;
+    --section-padding: 60px;
+    --section-background: #f6f6f6;
+    --main-duration: 0.5s;
+  }
+    * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      /* border: solid black; */
+  }
+  body{
+      font-family: 'Work Sans', sans-serif;
+      position: relative;
+      overflow: hidden;
+    }
+  html {
+      scroll-behavior: smooth;
+    }
+  
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* End Of Global Styles*/
+
+
+/* GLobal Elements Styles*/
+h1, h2, h3 {
+    margin-bottom: 1.25rem;
+    color: #fff;
+}
+
+h1 {
+    font-size: 2.25rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #e8631c;
+    
+}
+button {
+    display: inline-block;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 0;
+    background-color: #e8631c;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #333;
+    color: #e8631c;
+}
+
+img {
+    max-width: 100%;
+}
+/* End Of Global Elements Styles*/
+
+/*
+================================
+End of CSS Reset
+*/
+
+
+
+
+/*
+================================
+Utility Classes
+================================
+*/
+
+/* Global Sections Styles */
+.section {
+    padding: 1.25rem 0;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: hidden;
+}
+/* End Of Global Section Styles*/
+
+
+/* Section Heading*/
+.section-heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-heading h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 1.25rem;
+}
+
+.section-heading p {
+    margin: auto;
+    width: 65%;
+    font-size: 1.1rem;
+    color: #e7e7e7;
+}
+/* End of Section Heading*/
+
+
+
+/* Container Styles */
+.container {
+    width: 80%;
+    padding: 1rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+/* End of Container Styles*/
+
+
+
+/* Overlay*/
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+/* End of Overlay*/
+
+
+
+/* Grid Row Styles */
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1.25rem;
+    justify-items: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+/* End of Grid Row Styles */
+
+/* Grid Column Styles */
+.col {
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    position: relative;
+    height: 100%;
+}
+/* End of Grid Column Styles */
+
+
+/* Cards Styles*/
+.card {
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+    text-align: center;
+}
+/* End Of Cards Styles*/
+
+
+
+
+/* Flex utilities*/
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-no-wrap {
+    flex-wrap: nowrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-between {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around {
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* End of Flex utilities*/
+
+
+/* Border and outline utilities*/
+.border {
+    border: 1px solid #e8631c;
+}
+
+.rounded {
+    border-radius: 0.5rem;
+}
+
+.rounded-top {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.rounded-bottom {
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.rounded-left {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.rounded-right {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+/* End of Border and outline utilities*/
+
+/*
+================================
+End of Utility Classes
+================================
+*/
+
